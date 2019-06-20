@@ -9,11 +9,12 @@
 /logs/
 */logs/*
 /logs/*
-
+.idea
+.mvn/*
 .metadata
 .metadata/**/*
 .metadata/**/**/*
 /pom.xml.bak
-
+*.iml
 # Java annotation processor (APT)
 .factorypath
