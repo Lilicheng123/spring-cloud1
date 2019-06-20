@@ -1,35 +1,17 @@
 server:
-  port: 5000
+  port: 8099
 spring:
   application:
-    name: admin-server
-
-  mail:
-    default-encoding: UTF-8
-    host: smtp.163.com
-    username: 18086417780@163.com
-    password: llc123456 #授权码
-    properties:
-          mail:
-            smtp:
-              auth: true
-              starttls:
-                enable: true
-                required: true
-
+    name: SpringBootAdmin
+  security:
+    user:
+      name: anxminise
+      password: 123456
   boot:
     admin:
-      notify:
-       mail:
-         to: 180864177780@163.com
-         from: 180864177780@163.com
+      ui:
+        title: 忧臣解读
 
-eureka:
   client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
-
-management:
-  security:
-    enabled: false
-
+    serviceUrl:
+      defaultZone: http:localhost:8761/eureka
