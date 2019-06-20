@@ -8,12 +8,13 @@ server:
 spring:
   application:
     name: service-zuul
-
+  main:
+    allow-bean-definition-overriding: true
 zuul:
   routes:
     api-a:
       path: /api-a/**
-      serviceId: SERVICE-HI
+      serviceId: SERVICE-CONSUME
   host:
     socket-timeout-millis: 60000
     connect-timeout-millis: 60000
