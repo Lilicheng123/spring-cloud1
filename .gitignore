@@ -1,0 +1,19 @@
+##ignore this file##
+*/target/*
+*/release/*
+/.springBeans
+/.factorypath
+.classpath
+.project
+.settings
+/logs/
+*/logs/*
+/logs/*
+
+.metadata
+.metadata/**/*
+.metadata/**/**/*
+/pom.xml.bak
+
+# Java annotation processor (APT)
+.factorypath

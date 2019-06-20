@@ -1,0 +1,20 @@
+package com.llc.service.hi.core;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.hystrix.EnableHystrix;
+import org.springframework.cloud.openfeign.EnableFeignClients;
+import org.springframework.context.annotation.ComponentScan;
+
+@ComponentScan(basePackages = { "com.llc.*"})
+@SpringBootApplication
+@EnableFeignClients
+public class ServiceHiCoreApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(ServiceHiCoreApplication.class, args);
+    }
+
+}
