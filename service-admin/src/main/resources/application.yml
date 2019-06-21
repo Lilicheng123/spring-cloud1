@@ -1,17 +1,12 @@
 server:
-  port: 8099
+  port: 8700
+
 spring:
   application:
-    name: SpringBootAdmin
-  security:
-    user:
-      name: anxminise
-      password: 123456
-  boot:
-    admin:
-      ui:
-        title: 忧臣解读
+    name: service-admin
 
+eureka:
   client:
     serviceUrl:
-      defaultZone: http:localhost:8761/eureka
+      defaultZone: http://localhost:8761/eureka/
+
