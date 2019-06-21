@@ -1,0 +1,13 @@
+server:
+  port: 8092
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Lilicheng123/config.git
+          username: lilicheng123
+          password: llc18086417780
+
