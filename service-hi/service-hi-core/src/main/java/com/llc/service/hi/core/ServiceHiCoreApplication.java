@@ -11,6 +11,7 @@ import org.springframework.context.annotation.ComponentScan;
 @ComponentScan(basePackages = { "com.llc.*"})
 @SpringBootApplication
 @EnableFeignClients
+@EnableEurekaClient
 public class ServiceHiCoreApplication {
 
     public static void main(String[] args) {
