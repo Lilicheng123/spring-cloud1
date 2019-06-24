@@ -14,8 +14,11 @@ public class HelloServiceImpl implements HelloService {
     @Value("${server.port}")
     private String port;
 
+    @Value("${mytest}")
+    private String mytest;
+
     @Override
     public String sayHello() {
-        return "hello,world"+port;
+        return "hello,world"+mytest;
     }
 }
