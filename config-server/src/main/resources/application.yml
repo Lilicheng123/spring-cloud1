@@ -8,8 +8,8 @@ spring:
       server:
         git:
           uri: https://github.com/Lilicheng123/config/
-          username: lilicheng123
-          password: llc18086417780
+          username:  # git账号
+          password:  # git密码
       label: master
 
 
