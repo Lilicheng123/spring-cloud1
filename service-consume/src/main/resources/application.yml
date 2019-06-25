@@ -4,6 +4,8 @@ server:
 spring:
   application:
     name: service-consume
+  main:
+    allow-bean-definition-overriding: true
 
 eureka:
   client:
