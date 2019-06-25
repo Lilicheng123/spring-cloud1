@@ -13,4 +13,7 @@ public interface HelloService {
 
     @RequestMapping(value = "/sayHello",method = RequestMethod.GET)
     String sayHello();
+
+    @RequestMapping(value = "/testEvent",method = RequestMethod.GET)
+    String testEvent();
 }

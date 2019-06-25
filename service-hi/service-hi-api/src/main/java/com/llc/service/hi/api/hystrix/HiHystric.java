@@ -16,4 +16,9 @@ public class HiHystric implements HelloService {
     public String sayHello() {
         return "你好啊，世界";
     }
+
+    @Override
+    public String testEvent() {
+        return null;
+    }
 }

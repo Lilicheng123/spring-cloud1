@@ -1,5 +1,7 @@
 package com.llc.service.hi.core.impl;
 
+import com.llc.cloud.bus.core.EventBusPusher;
+import com.llc.cloud.bus.event.hi.HelloEvent;
 import com.llc.service.hi.api.HelloService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RestController;
@@ -20,5 +22,11 @@ public class HelloServiceImpl implements HelloService {
     @Override
     public String sayHello() {
         return "hello,world"+mytest;
+    }
+
+    @Override
+    public String testEvent() {
+        EventBusPusher.syncPost(new HelloEvent(this,"llc"));
+        return "123";
     }
 }
