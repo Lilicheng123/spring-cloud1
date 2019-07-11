@@ -31,7 +31,9 @@ public abstract class AbstractNoticeOneServiceEvent extends RemoteApplicationEve
 		// TODO 从eureka获取服务器实例然后随机
 		// String destination = RandomUtil.getRandomIntegerNot0(2).toString();
 		// return "*-" + destination;
-		return "*-" + EventBusPusher.getActive() + 1;
+		//return "*" + EventBusPusher.getActive() + 1;
+		//指定可监听事件的服务
+		return "*";
 	}
 
 }
